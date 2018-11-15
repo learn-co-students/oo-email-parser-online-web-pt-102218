@@ -1,9 +1,11 @@
-require 'pry'
+
 class EmailParser
-
-  def initialize
-    parser = EmailParser.new(emails )
-
+  attr_accessor :emails
+  def initialize(emails)
+    @emails = emails
+  end
+  def parse
+    email_parse = @emails.split(" ") || email_parse = @emails.split(",")
 
   end
 end
