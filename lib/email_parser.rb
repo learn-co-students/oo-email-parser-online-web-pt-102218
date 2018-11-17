@@ -12,8 +12,8 @@ class EmailParser
   end
   
   def parse
-   delimiters = [',', ' ']
-   out = @emails.split(Regexp.union(delimiters)).reject{|i| i.empty?}
+   x = [',', ' ']
+   out = @emails.split(Regexp.union(x)).reject{|i| i.empty?}
    out.uniq
   end
 end
